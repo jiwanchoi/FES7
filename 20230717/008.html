@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        .container {
+            width: 600px;
+            height: 600px;
+            background-color: #eee;
+            display: grid;
+            grid-template-areas:
+                "header1 header1 header1 section section "
+                "header1 header1 header1 section section"
+                "header2 header2 aside1 section section"
+                "aside2 aside2 footer footer footer"
+                "aside2 aside2 footer footer footer";
+
+            gap: 10px;
+        }
+
+        .header1 {
+            background-color: blue;
+            grid-area: header1;
+        }
+
+        .header2 {
+            background-color: blue;
+            grid-area: header2;
+        }
+
+        section {
+            background-color: yellow;
+            grid-area: section;
+        }
+
+        .aside1 {
+            background-color: pink;
+            grid-area: aside1;
+        }
+
+        .aside2 {
+            background-color: pink;
+            grid-area: aside2;
+        }
+
+        footer {
+            background-color: brown;
+            grid-area: footer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header1"></header>
+        <header class="header2"></header>
+        <section></section>
+        <aside class="aside1"></aside>
+        <aside class="aside2"></aside>
+        <footer></footer>
+    </div>
+</body>
+
+</html>
