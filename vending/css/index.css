@@ -3,7 +3,7 @@ body {
   }
   h1,
   h2,
-  h3 {
+  h3{
     margin: 0;
     padding: 0;
     font: inherit;
@@ -51,8 +51,12 @@ body {
   }
 
   main{
-    padding-top: 67px;
+    padding-top: 7em;
+    width: 1920px;
+    height: 963px;
+    max-width: 100%;
     display:flex;
+    justify-content: center;
   }
 
  header{
@@ -169,6 +173,13 @@ button p{
     padding-left:10px;
     padding-right:10px;
     box-sizing: border-box;
+    color: #000;
+    text-align: center;
+    font-family: Noto Sans KR;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
 }
 .charge-return{
     display:flex;
@@ -183,8 +194,10 @@ button p{
     margin: 0px auto;
     color: #000;
     text-align: center;
+    color: #000;
+    text-align: center;
     font-family: Noto Sans KR;
-    font-size: 12px;
+    font-size: 13px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -219,10 +232,10 @@ button p{
     width: 94px;
     height: 33px;
     margin: 0px auto;
-    color: #000;
     text-align: center;
+    color: #000;
     font-family: Noto Sans KR;
-    font-size: 12px;
+    font-size: 13px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -243,7 +256,6 @@ button p{
     margin-top: 12px;
     margin-left:12px;
     margin-right:12px;
-    /* width: 170px; */
     height: 46px;
     flex-shrink: 0;
     background-color: white;
@@ -330,11 +342,13 @@ button p{
     background: #EAE8FE;
     
     color: #000;
+    text-align: right;
     font-family: Noto Sans KR;
     font-size: 14px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 700;
     line-height: normal;
+
     padding-left:8px;
     padding-right:10px;
     box-sizing: border-box;
@@ -343,7 +357,7 @@ button p{
 
 .bottom{
     margin-left:18px;
-    margin-top:16px;
+    margin-top:20px;
     display:flex;
 }
 
@@ -359,7 +373,8 @@ button p{
 }
 
 .my{
-
+    padding-top:25px;
+    padding-bottom:13px;
     color: #000;
     text-align: center;
     font-family: Noto Sans KR;
