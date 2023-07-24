@@ -1,3 +1,8 @@
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+.notosanskr * { 
+ font-family: 'Noto Sans KR', sans-serif;
+}
 body {
     margin: 0;
   }
@@ -153,7 +158,7 @@ button p{
 }
 .sold-out{
     position: absolute;
-    z-index:2;
+    z-index:1;
     /* display: flex; */
     margin: 0 auto;
     width: 51px;
@@ -192,8 +197,6 @@ button p{
     width: 94px;
     height: 33px;
     margin: 0px auto;
-    color: #000;
-    text-align: center;
     color: #000;
     text-align: center;
     font-family: Noto Sans KR;
