@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>로그인</title>
     <link rel="stylesheet" href="./login.css">
+    <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
@@ -20,18 +21,40 @@
         <section class="section2">
             <h2>위니브에서 여러분의 궁금증을 해결하세요! :)</h2>
             <form>
-                <div>
-                    <label for="input-id"></label><br>
-                    <input type="text" id="input-id" maxlength="30" placeholder="아이디">
-                </div>
-                <div>
-                    <label for="input-pw"></label><br>
-                    <input type="text" id="input-pw" maxlength="30" placeholder="비밀번호">
-                </div>
-                <label for="input-hold" class="label-hold">로그인 상태 유지</label>
-                <input type="checkbox" id="input-hold" class="input-hold txt-hide">
-                <button type="submit">로그인</button>
+                <label for="input-id"></label><br>
+                <input type="text" id="input-id" maxlength="30" placeholder="아이디">
+                <label for="input-pw"></label><br>
+                <input type="text" id="input-pw" maxlength="30" placeholder="비밀번호">
+                <label for="input-hold" class="label-hold"></label>
+                <input type="checkbox" id="input-hold" class="input-hold txt-hide">로그인 상태 유지
+                <button class="login-button" type="submit">로그인</button>
             </form>
+            <div class="middle">
+                <a href="#">회원가입</a>
+                <p>|</p>
+                <a href="#">아이디/비밀번호찾기</a>
+            </div>
+            <div class="line">
+                <p>또는</p>
+            </div>
+            <article class="links">
+                <button type="button">
+                    <img src="#" alt="google" />
+                    구글 계정으로 로그인
+                </button>
+                <button type="button">
+                    <img src="#" alt="facebook" />
+                    페이스북 계정으로 로그인
+                </button>
+                <button type="button">
+                    <img src="#" alt="naver" />
+                    네이버 계정으로 로그인
+                </button>
+                <button type="button">
+                    <img src="#" alt="kakaotalk" />
+                    카카오톡 계정으로 로그인
+                </button>
+            </article>
         </section>
     </main>
 </body>

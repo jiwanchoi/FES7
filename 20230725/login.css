@@ -1,42 +1,49 @@
 /* reset ---------------------- */
-body,
-h1,
-h2,
-p,
-ul,
-button {
-  padding: 0;
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
   margin: 0;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+  padding: 0;
+  border: 0;
+  font-size: 100%;
   font: inherit;
+  vertical-align: baseline;
 }
-
-ul,
-li {
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
   list-style: none;
 }
-input {
-  font: inherit;
+blockquote, q {
+  quotes: none;
 }
-
-button {
-  font: inherit;
-  border: 0;
-  background: none;
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
 }
-
-button:enabled {
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+button{
   cursor: pointer;
-}
-img {
-  vertical-align: top;
 }
 
 /* 공통 CSS */
@@ -54,27 +61,19 @@ img {
 main{
     width: 520px;
     height: 712px;
-    flex-shrink: 0;
-    max-width: 100%;
-    max-width: calc(100% - 60px);
     border-radius: 10px;
     border: 1px solid var(--c-4-c-4-c-4, #C4C4C4);
     background: #FFF;
-    position: absolute;
-    top: 50%;
-    left:50%;
-    transform: translate(-50%, -50%);
-    margin-left: 24px;
+    margin: 0 auto;
 }
 .section1{
     display:flex;
     justify-content: center;
-    width: 520px;
     padding-top:20px;
     padding-bottom:20px;
-    position:relative;
     border: 1px solid #C4C4C4;
     border-radius: 10px 10px 0 0px;
+    position:relative;
 }
 
 h1 {
@@ -88,18 +87,16 @@ h1 {
 
 .section1>a{
     position:absolute;
-    right : 24px;
+    right:24px;
 }
 
 .section2{
-    width: 520px;
-    height: 652px;
+    padding-left:24px;
     flex-shrink: 0;
 }
 
 h2{
     padding-top: 26px;
-    
     color: #000;
     font-family: Spoqa Han Sans Neo;
     font-size: 20px;
@@ -111,12 +108,121 @@ h2{
 input::placeholder{
     padding-left:16px;
     color:#767676;
+    color: var(--767676, #767676);
+    font-family: Spoqa Han Sans Neo;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
-div>input{
+
+[type="text"]{
     width: 472px;
     height: 50px;
     flex-shrink: 0;
     border-radius: 5px;
-border: 1px solid var(--c-4-c-4-c-4, #C4C4C4);
-background: #FFF;
+    border: 1px solid var(--c-4-c-4-c-4, #C4C4C4);
+    background: #FFF;
+    margin-bottom:10px;
+}
+.login-button{
+    width: 472px;
+    height: 50px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    background: #2F80ED;
+    color: #FFF;
+    font-family: Spoqa Han Sans Neo;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px; /* 122.222% */
+    margin-bottom:20px;
+    margin-top:21px;
+}
+.middle{
+  display:flex;
+  justify-content: center;
+}
+.middle>a{
+  text-decoration-line: none;
+  color: var(--767676, #767676);
+  font-family: Spoqa Han Sans Neo;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.middle>p{
+  padding:0 12px;
+  color: var(--767676, #767676);
+font-family: Spoqa Han Sans Neo;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.line{
+  display:flex;
+  flex-basis: 100%;
+  align-items: center;
+  color: var(--767676, #767676);
+  font-family: Spoqa Han Sans Neo;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-top:30px;
+  padding-bottom:20px;
+}
+
+.line::before{
+  content:'';
+  flex-grow:1;
+  margin:0px 13px;
+  background: #C4C4C4;
+  height:1px;
+  font-size:0px;
+  line-height: 0px;;
+}
+.line::after{
+  content:'';
+  flex-grow:1;
+  margin:0px 13px;
+  background: #C4C4C4;
+  height:1px;
+  font-size:0px;
+  line-height: 0px;;
+}
+
+.links{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.links img{
+  position:absolute;
+  left:12px;
+}
+
+.links button{
+  width: 472px;
+  height: 50px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  border: 1px solid var(--767676, #767676);
+  background: #FFF;
+  margin-bottom: 10px;
+  
+}
+
+.links button:nth-child(2){
+  border: 1px solid #2D9CDB;
+}
+.links button:nth-child(3){
+  border: 1px solid #00bf18;
+}
+.links button:nth-child(4){
+  border: 1px solid #F2C94C;
 }
