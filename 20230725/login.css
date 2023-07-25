@@ -1,0 +1,122 @@
+/* reset ---------------------- */
+body,
+h1,
+h2,
+p,
+ul,
+button {
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font: inherit;
+}
+
+ul,
+li {
+  list-style: none;
+}
+input {
+  font: inherit;
+}
+
+button {
+  font: inherit;
+  border: 0;
+  background: none;
+}
+
+button:enabled {
+  cursor: pointer;
+}
+img {
+  vertical-align: top;
+}
+
+/* 공통 CSS */
+.a11y-hidden {
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+}
+
+main{
+    width: 520px;
+    height: 712px;
+    flex-shrink: 0;
+    max-width: 100%;
+    max-width: calc(100% - 60px);
+    border-radius: 10px;
+    border: 1px solid var(--c-4-c-4-c-4, #C4C4C4);
+    background: #FFF;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    margin-left: 24px;
+}
+.section1{
+    display:flex;
+    justify-content: center;
+    width: 520px;
+    padding-top:20px;
+    padding-bottom:20px;
+    position:relative;
+    border: 1px solid #C4C4C4;
+    border-radius: 10px 10px 0 0px;
+}
+
+h1 {
+    color: #000000;
+    font-family: Spoqa Han Sans Neo;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.section1>a{
+    position:absolute;
+    right : 24px;
+}
+
+.section2{
+    width: 520px;
+    height: 652px;
+    flex-shrink: 0;
+}
+
+h2{
+    padding-top: 26px;
+    
+    color: #000;
+    font-family: Spoqa Han Sans Neo;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 120% */
+}
+
+input::placeholder{
+    padding-left:16px;
+    color:#767676;
+}
+div>input{
+    width: 472px;
+    height: 50px;
+    flex-shrink: 0;
+    border-radius: 5px;
+border: 1px solid var(--c-4-c-4-c-4, #C4C4C4);
+background: #FFF;
+}

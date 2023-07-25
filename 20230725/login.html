@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인</title>
+    <link rel="stylesheet" href="./login.css">
+</head>
+
+<body>
+    <main>
+        <section class="section1">
+            <h1>로그인 또는 회원가입</h1>
+            <a href="#">
+                <img class="close" src="./images/close.jpg" alt="close">
+            </a>
+        </section>
+        <section class="section2">
+            <h2>위니브에서 여러분의 궁금증을 해결하세요! :)</h2>
+            <form>
+                <div>
+                    <label for="input-id"></label><br>
+                    <input type="text" id="input-id" maxlength="30" placeholder="아이디">
+                </div>
+                <div>
+                    <label for="input-pw"></label><br>
+                    <input type="text" id="input-pw" maxlength="30" placeholder="비밀번호">
+                </div>
+                <label for="input-hold" class="label-hold">로그인 상태 유지</label>
+                <input type="checkbox" id="input-hold" class="input-hold txt-hide">
+                <button type="submit">로그인</button>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>
