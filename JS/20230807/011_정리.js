@@ -1,40 +1,47 @@
-// push
+// push - 배열 뒤에 값 추가
 [10, 20, 30].push(40);
-// pop
+// pop - 배열 뒤 값 제거하고 리턴
 [10, 20, 30].pop();
 
-// unshift
+// unshift - 배열의 가장 앞에 값 추가
 [10, 20, 30].unshift(40);
-// shift
+// shift - 배열의 가장 앞 값 제거하고 리턴
 [10, 20, 30].shift();
 
-// splice
+// splice - 1의 인덱스에, 0만큼 제거하고, 40을 추가한다.
+//(인덱스, 제거할 수, 추가할 값(여러개 가능))
 [10, 20, 30].splice(1, 0, 40);
 
-// sort
+// sort - 순서 정렬
 [10, 20, 30].sort();
+// 오름차순 정렬
 [10, 20, 30].sort((a, b) => a - b);
+// 내림차순 정렬
 [10, 20, 30].sort((a, b) => b - a);
 
 // map
+// 기존 값을 변경하지 않는다.
+// 리턴값을 구하고 싶을 때
 [10, 20, 30].map((v, i) => v ** 2);
 
 // forEach
+// 리턴값은 언제나 undefined
 [10, 20, 30].forEach((v, i) => console.log(v));
+//map과 forEach의 가장 큰 차이점은 리턴값 반환가능유무
 
-// filter
+// filter - 값이 true인 것만
 [10, 20, 30].filter((v, i) => v > 15);
 
-// reduce
+// reduce - 누적값을 더해줌
 [10, 20, 30].reduce((a, c) => a + c, 0);
 
-// includes(String에도 있습니다!)
+// includes(String에도 있습니다!) - 배열 안에 값이 있는지 확인
 [10, 20, 30].includes(20);
 
-// join
+// join - 배열 값 사이에 ()문자열을 추가하여 리턴/ 공백도 추가 가능
 [10, 20, 30].join("!");
 
-// reverse
+// reverse - 배열 값을 반대로 리턴해준다.
 [10, 20, 30].reverse();
 
 // 메서드 체이닝에서 주의할 점
