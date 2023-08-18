@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        body {
+            background-color: green;
+        }
+
+        .screen {
+            width: 300px;
+            height: 300px;
+            margin: 0 auto;
+            background-color: black;
+        }
+
+
+        .screen.red {
+            background-color: red;
+        }
+
+        .screen.yellow {
+            background-color: yellow;
+        }
+
+        .screen.green {
+            background-color: blue;
+        }
+
+        ul {
+            display: flex;
+            justify-content: space-around;
+            width: 300px;
+            margin: 20px auto 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="screen"></div>
+    <ul>
+        <li><button type="button" class="red">빨강</button></li>
+        <li><button type="button" class="yellow">노랑</button></li>
+        <li><button type="button" class="blue">파랑</button></li>
+    </ul>
+
+    <script>
+        // const redButton = document.querySelector(".red");
+        // const yellowButton = document.querySelector(".yellow");
+        // const greenButton = document.querySelector(".green");
+
+        const screen = document.querySelector(".screen");
+        const btn = document.querySelectorAll("button");
+
+
+        btn.forEach(x => {
+            x.addEventListener("click", () => {
+                // 초기화
+                screen.className = "screen";
+                screen.classList.add(x.className);
+            });
+        });
+
+        // btns.forEach(function (itemBtn) {
+        //     itemBtn.addEventListener('click', function () {
+        //         screen.className = 'screen';
+        //         screen.classList.add(itemBtn.className);
+        //     });
+        // });
+
+        // redButton.addEventListener("click", () => {
+        //     screen.style.backgroundColor = "red";
+        // });
+        // yellowButton.addEventListener("click", () => {
+        //     screen.style.backgroundColor = "yellow";
+        // });
+        // greenButton.addEventListener("click", () => {
+        //     screen.style.backgroundColor = "green";
+        // });
+    </script>
+</body>
+
+</html>
