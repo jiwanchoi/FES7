@@ -23,8 +23,15 @@
         const inp = document.querySelector('input');
         const btn = document.querySelector('button');
 
-        btn.addEventListener('click', function () {
+        inp.addEventListener('keyup', function (e) {
+            if (e.keyCode === 13) {
+                text.innerHTML = inp.value;
+                inp.value = null;
+            }
+        });
+        btn.addEventListener("click", () => {
             text.innerHTML = inp.value;
+            inp.value = null;
         });
 
     </script>
