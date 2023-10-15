@@ -1,6 +1,6 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
-import {getFireStore} from "firebase/firestore";
+import {getFirestore} from "firebase/firestore";
 import {getAuth} from "firebase/auth";
 
 const firebaseConfig = {
@@ -16,7 +16,7 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 // firestore 초기화
-const appFireStore = getFireStore(app);
+const appFireStore = getFirestore(app);
 // 인증 초기화
 const appAuth = getAuth();
 
